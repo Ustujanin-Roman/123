@@ -1,0 +1,100 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("image/forest-mountains-sunset-cool-weather-minimalism.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+/* Контейнеры для логина и регистрации */
+.login-container, .dRegister-container {
+  margin: 10px auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(3px);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative; /* Для расположения внутренних элементов */
+}
+
+/* Стили для полей ввода */
+input[type="login"], input[type="password"], input[type="repass"], input[type="email"] {
+  width: 90%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #D3D3D3;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+/* Стили для кнопки отправки */
+input[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Логотип */
+.logo {
+  margin-bottom: 15px;
+}
+
+/* Кнопка закрытия */
+.close-btn {
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+  float: right; /* Выравнивание кнопки вправо */
+  margin-bottom: 10px; /* Отступ снизу */
+}
+
+/* Стили для таблицы */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white; /* Белый фон для таблицы */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для таблицы */
+}
+
+/* Стили для заголовков таблицы */
+th {
+  background-color: #4CAF50; /* Зеленый фон для заголовков */
+  color: white; /* Белый текст в заголовках */
+  padding: 12px 15px; /* Отступы для заголовков */
+  text-align: center; /* Центрирование текста в заголовках */
+}
+
+/* Стили для строк таблицы */
+td {
+  padding: 10px 15px; /* Отступы для ячеек таблицы */
+  text-align: center; /* Центрирование текста в ячейках */
+  border-bottom: 1px solid #ddd; /* Граница снизу для ячеек */
+}
+
+/* Эффект при наведении на строки таблицы */
+tr:hover {
+  background-color: #f1f1f1; /* Светло-серый фон при наведении */
+}
+
+/* Стили для пустой строки, если нет пользователей */
+td[colspan="4"] {
+  text-align: center; /* Центрирование текста */
+  font-style: italic; /* Курсив для текста */
+  color: #888; /* Серый цвет для текста */
+}
+ 
